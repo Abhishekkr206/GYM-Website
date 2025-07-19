@@ -54,6 +54,7 @@ const FitnessTrainers = () => {
                 <img 
                   src={trainer.image} 
                   alt={trainer.name}
+                  loading="lazy"
                   className="w-full h-full object-cover object-top grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>

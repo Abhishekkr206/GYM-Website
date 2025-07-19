@@ -62,7 +62,7 @@ export default function AboutUs() {
           <div className="relative bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl overflow-hidden shadow-2xl">
             {/* Video thumbnail/placeholder */}
             <div className="relative aspect-video bg-gradient-to-br from-gray-700 via-gray-600 to-gray-800">
-                <img src='gym-pic.png' className='h-full w-full object-cover' />
+                <img src='gym-pic.png' className='h-full w-full object-cover' loading="lazy" />
               {/* Play button */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <button className="bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all duration-300 rounded-full p-6 group hover:scale-110 transform">
