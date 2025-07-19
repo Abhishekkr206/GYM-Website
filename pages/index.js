@@ -5,6 +5,7 @@ import FitnessTrainers from "@/components/section/trainersSection";
 import Testimonials from "@/components/section/testimonials";
 import ContactForm from "@/components/section/contect";
 import PricingSection from "@/components/section/pricing";
+import Footer from "@/components/section/Footer";
 
 export default function home(){
   return(
@@ -16,6 +17,7 @@ export default function home(){
       <Testimonials />
       <PricingSection />
       <ContactForm />
+      <Footer />
     </>
   )
 }

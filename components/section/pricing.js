@@ -58,8 +58,8 @@ const PricingSection = () => {
   ];
 
   return (
-    // Removed 'font-sans' to use the browser's default font
-    <div className="bg-black text-white antialiased">
+    
+    <div className="bg-black text-white antialiased" id='pricing'>
       <div className="max-w-7xl mx-auto py-16 sm:py-10 sm:pb-20 px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

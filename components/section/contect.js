@@ -2,6 +2,7 @@ import React from 'react';
 
 const ContactForm = () => {
   return (
+    <section id="contact">
     <div className="relative min-h-screen flex flex-col items-center justify-center py-15 px-4 bg-gradient-to-br from-black via-gray-900 to-black overflow-hidden">
       {/* Background Decorative Elements (CSS only) */}
       <div className="absolute text-lime-400 opacity-10 w-24 h-24 top-10 left-10 rotate-12 border-4 border-lime-400 rounded-lg"></div>
@@ -82,6 +83,7 @@ const ContactForm = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

@@ -30,6 +30,7 @@ const Testimonials = () => {
   ];
 
   return (
+    <section>
     <div className="bg-black min-h-screen flex flex-col items-center justify-center py-20 px-4">
       {/* Header Section */}
       <div className="text-center mb-16 max-w-4xl">
@@ -105,6 +106,7 @@ const Testimonials = () => {
         <div className="w-24 h-0.5 bg-lime-400 mx-auto"></div>
       </div>
     </div>
+    </section>
   );
 };
 

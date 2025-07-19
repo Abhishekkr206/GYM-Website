@@ -6,6 +6,7 @@ export default function AboutUs() {
   const lightGreen = '#F5FFC8';
   
   return (
+    <section id='about'>
     <div className="min-h-screen bg-gradient-to-br from-black/98 via-gray-900 to-slate-800 text-white relative overflow-hidden">
       {/* Background pattern overlay */}
       <div className="absolute inset-0 opacity-10">
@@ -78,5 +79,6 @@ export default function AboutUs() {
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#9BCD00]/5 to-[#F5FFC8]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-gradient-to-tr from-[#9BCD00]/5 to-[#F5FFC8]/5 rounded-full blur-3xl"></div>
     </div>
+    </section>
   );
 }
