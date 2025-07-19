@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
   const [showNavbar, setShowNavbar] = useState(true);
+  const [scrollY, setScrollY] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
   const lastScrollY = useRef(0);
@@ -17,6 +18,7 @@ export default function Navbar() {
       setShowNavbar(true);
     }
     
+    setScrollY(currentScrollY);
     lastScrollY.current = currentScrollY;
   }, []);
 
@@ -47,8 +49,12 @@ export default function Navbar() {
     setIsMobileMenuOpen(false);
   }, []);
 
-  const navbarStyles = `fixed top-4 z-50 px-8 py-4 rounded-full transition-all duration-300 ease-in-out bg-white/30 backdrop-blur-md border border-white/20 shadow-lg ${
+  const isInHeroSection = scrollY < 100;
+  
+  const navbarStyles = `fixed top-4 z-50 px-8 py-4 rounded-full transition-all duration-300 ease-in-out ${
     showNavbar ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+  } ${
+    isInHeroSection ? 'bg-transparent' : 'bg-white/30 backdrop-blur-md border border-white/20 shadow-lg'
   }`;
 
   return (
